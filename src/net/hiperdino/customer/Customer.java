@@ -11,6 +11,10 @@ public class Customer {
     String name;
     private Stack<Integer> customerProducts = new Stack<>();
 
+    public Customer() {
+        this.name = Utils.getRandomName();
+    }
+
     public void setCustomerProducts() {
         System.out.println("How many products do you carry?");
         int amountOfProducts = keyboard.nextInt();
