@@ -16,5 +16,8 @@ public class App {
 
         cashier.attendCustomer();
         cashier.seeCustomers();
+
+        System.out.println(cashier.toString());
+
     }
 }
