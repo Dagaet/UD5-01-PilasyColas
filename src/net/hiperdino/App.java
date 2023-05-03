@@ -27,7 +27,6 @@ public class App {
                     break;
                 case 2:
                     cashier.addCustomer();
-                    System.out.println("Customer has been added.");
                     break;
                 case 3:
                     cashier.attendCustomer();
