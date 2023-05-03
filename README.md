@@ -7,5 +7,5 @@ In this practise Hiperdino has requested us a simulation app of one of their sup
 - [Open cash register](/docs/OpenCashRegister.md)
 - [Add a new customer](/docs/AddCustomer.md)
 - [Attend a customer](/docs/AttendCustomer.md)
-- [See customers left](/docs/Utils.md)
+- [See customers left](/docs/SeeCustomersLeft.md)
 
