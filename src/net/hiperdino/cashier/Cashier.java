@@ -7,7 +7,7 @@ import net.hiperdino.customer.Customer;
 
 public class Cashier {
 
-    private static Integer cashRegister = 1;
+    private static Integer cashRegister = 0;
     private Queue<Customer> customersQueue = new LinkedList<>();
     private static boolean isOpen = false;
 
@@ -31,6 +31,14 @@ public class Cashier {
     public void addCustomer() {
         Customer customer = new Customer();
         customersQueue.add(customer);
+    }
+
+    public void attendCustomer() {
+        System.out.println("\nThe next customer is being attended: \n" + customersQueue.poll());
+    }
+
+    public void seeCustomers() {
+        System.out.println("\nNext customers: " + );
     }
 
 }
