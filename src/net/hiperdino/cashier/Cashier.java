@@ -38,8 +38,14 @@ public class Cashier {
     }
 
     public void addCustomer() {
-        Customer customer = new Customer();
-        customersQueue.add(customer);
+        if (isOpen){
+            Customer customer = new Customer();
+            customersQueue.add(customer);
+            customer.toString();
+            System.out.println("Customer has been added.");
+        } else {
+            System.out.println("The cash register is not open");
+        }
     }
 
     public void attendCustomer() {
