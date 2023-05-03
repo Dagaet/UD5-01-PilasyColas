@@ -34,11 +34,17 @@ public class Cashier {
     }
 
     public void attendCustomer() {
-        System.out.println("\nThe next customer is being attended: \n" + customersQueue.poll());
+        if (customersQueue.size() == 0){
+            System.out.println("There is noone left in the queue");
+        } else {
+            System.out.println("\nThe next customer is being attended: \n" + customersQueue.poll());
+        }
     }
 
     public void seeCustomers() {
-        System.out.println("\nNext customers: " + );
+        System.out.println("\nNext customers: ");        
+        customersQueue.forEach((customer) -> System.out.println(customer.getName()));
+        System.out.println(" ");
     }
 
 }

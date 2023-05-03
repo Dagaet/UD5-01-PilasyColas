@@ -30,9 +30,9 @@ public class Customer {
     @Override
     public String toString() {
         String msg = "==========================\n";
-        msg += "Nombre: " + this.name;
-        msg += "\n Total de productos: " + customerProducts.size();
-        msg += "\n Lista de articulos en la cesta: \n";
+        msg += "Name: " + this.name;
+        msg += "\n Products total: " + customerProducts.size();
+        msg += "\n List of products: \n";
         for (int i = 0; i < customerProducts.size(); i++) {
             msg += "-> " + customerProducts.get(i);
             msg += "\n";
