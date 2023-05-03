@@ -43,13 +43,7 @@ public class Cashier {
 
     public void seeCustomers() {
         System.out.println("\nNext customers: ");        
-        
-        for (Customer customer : customersQueue) {
-            
-        }
-
         customersQueue.forEach((customer) -> System.out.println(customer.getName()));
-        
         System.out.println(" ");
     }
 
