@@ -28,6 +28,15 @@ public class Cashier {
         }
     }
 
+    public void closeCashRegister() {
+        if (isOpen) {
+            System.out.println("Cash Register " + cashRegister + " is closing.");
+            isOpen = false;
+        } else {
+            System.out.println("Cash Register " + cashRegister + " is already closed.");
+        }
+    }
+
     public void addCustomer() {
         Customer customer = new Customer();
         customersQueue.add(customer);

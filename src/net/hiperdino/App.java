@@ -36,6 +36,7 @@ public class App {
                     cashier.seeCustomers();
                     break;
                 case 5:
+                    cashier.closeCashRegister();    
                     System.out.println("Bye bye");
                     break;
                 default:
